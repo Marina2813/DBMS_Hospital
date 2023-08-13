@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Patient Diagnosis</title>
+    
+    <link rel="stylesheet" href="styleaddrecord.css">
+</head>
+
+<body>
+    <div>
+        <form method="POST" action="http://localhost/DBMS-HMS/php/addrecord.php">
+            <h3>Add Patient Diagnosis</h3>
+
+            <label for="patientId">Patient ID:</label>
+            <input type="number" id="patientId" name="patientId" required><br><br>
+
+            <label for="diagnosisDate">Diagnosis Date:</label>
+            <input type="date" id="diagnosisDate" name="diagnosisDate" required><br><br>
+
+            <label for="diagnosisDetails">Diagnosis Details:</label>
+            <textarea id="diagnosisDetails" name="diagnosisDetails" required></textarea><br><br>
+
+            <label for="doctorId">Doctor ID:</label>
+            <input type="number" id="doctorId" name="doctorId" required><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

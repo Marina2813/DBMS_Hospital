@@ -1,0 +1,49 @@
+body {
+    background-image: url('../assets/exp1.png');
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+    /* make background image cover the entire page */
+    background-size: cover;
+    /* make sure the content is always on top */
+    position: relative;
+    
+
+}
+
+h1{
+    position: absolute;
+    width: 1079px;
+    height: 34px;
+    left: 100px;
+    top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 121px;
+    text-align: center;
+    color: #176B87;
+}
+
+#b1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 828px;
+    top: 450px;
+    color:white;
+    background: #010E7E;
+    border-radius: 30px;
+}
+
+#b2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 828px;
+    top: 350px;
+    color:white;
+    background: #010E7E;
+    border-radius: 30px;
+}

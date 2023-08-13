@@ -1,0 +1,82 @@
+/* styles1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001C30;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Optional styling for date inputs (browser-specific) */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+    color: #999;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+    opacity: 0.8;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Optional custom styling for error messages (add to the PHP code) */
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}

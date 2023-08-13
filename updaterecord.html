@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Record - Hospital Management System</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <h1>Update Record</h1>
+
+    <form action="update.php" method="POST">
+        <input type="hidden" name="record_id" value="123"> <!-- Hidden field for record ID -->
+
+        <label for="patient_name">Patient Name:</label>
+        <input type="text" id="patient_name" name="patient_name" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="admission_date">Admission Date:</label>
+        <input type="date" id="admission_date" name="admission_date">
+
+        <label for="discharge_date">Discharge Date:</label>
+        <input type="date" id="discharge_date" name="discharge_date">
+
+        <label for="medical_history">Medical History:</label>
+        <textarea id="medical_history" name="medical_history"></textarea>
+
+        <input type="submit" value="Update">
+    </form>
+
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

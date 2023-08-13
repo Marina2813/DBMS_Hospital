@@ -1,0 +1,190 @@
+body{
+    position: relative;
+width: 1400px;
+height: 1000px;
+
+background: #4473D0;
+}
+
+h1
+{
+position: absolute;
+width: 700px;
+height: 35px;
+left: 350px;
+top: -30px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 121px;
+text-align: center;
+color:aliceblue;
+}
+
+.img
+{
+    
+    width: 400px;
+    height: 460px;
+    background-size: cover;
+    position: absolute;
+    top: 160px;
+    left: 1008px; 
+
+    background: user-profile.jpg;
+}
+
+.rec
+{
+    box-sizing: border-box;
+
+position: absolute;
+width: 1300px;
+height: 400px;
+left: 44px;
+top: 520px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.view
+{
+    position: relative;
+width: 345px;
+height: 40px;
+left: 500px;
+top: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+}
+
+.name
+{
+position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 160px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+}
+.age
+{
+    position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 200px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+}
+.gender
+{
+    position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 240px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+
+}
+.department
+{
+    position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 280px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+}
+.experience
+{
+    position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 320px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+}
+.phonenum
+{
+    position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 360px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+}
+.email
+{
+    position: absolute;
+width: 209px;
+height: 30px;
+left: 44px;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #FFFCFC;
+}

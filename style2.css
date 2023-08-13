@@ -1,0 +1,18 @@
+html{
+    background: #001C30 ;
+}
+
+h1{
+    position: absolute;
+    width: 1079px;
+    height: 34px;
+    left: 100px;
+    top: -30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 121px;
+    text-align: center;
+    color:aliceblue;
+}

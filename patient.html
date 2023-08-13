@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Patient Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style1.css">
+    </head>
+    <body>
+        <h1>PATIENT LOGIN</h1>
+        <form method= "post" action="https://localhost/DBMS-HMS/php/patientlogin.php">
+            <label for="Name" id="nm">USERNAME:</label>
+            <input type="text" id="Name" name="Name" required>
+            <label for="pass" id="pwd">PASSWORD:</label>
+            <input type="password" id="pass" name="password" minlength="8" required>
+            <input id="submit" type="submit" value="LOGIN">
+        </form>
+    </body>
+</html>

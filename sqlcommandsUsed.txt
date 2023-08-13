@@ -1,0 +1,120 @@
+CREATE TABLE admin (
+  admin_ID INT(5) NOT NULL PRIMARY KEY,
+  username VARCHAR(30),
+  password VARCHAR(30),
+  email VARCHAR(100),
+  name VARCHAR(100)
+);
+
+CREATE TABLE appointments (
+  App_Id INT(5) NOT NULL PRIMARY KEY,
+  Patient_Id INT(5),
+  Doctor_ID INT(5),
+  app_date DATE,
+  app_time TIME,
+  status VARCHAR(30)
+);
+
+CREATE TABLE department (
+  Dept_Id INT(5),
+  Dept_Name VARCHAR(30)
+);
+
+CREATE TABLE doctor (
+  Doctor_ID INT(5) NOT NULL PRIMARY KEY,
+  Doctor_Name VARCHAR(30),
+  Contact_No VARCHAR(30),
+  Email VARCHAR(30),
+  Dept_Id INT(5),
+  password VARCHAR(30)
+);
+
+CREATE TABLE patient (
+  Patient_Id INT(5) NOT NULL PRIMARY KEY,
+  Name VARCHAR(30),
+  Age INT(5),
+  Gender VARCHAR(30),
+  Blood_Grp VARCHAR(30),
+  Height FLOAT,
+  Weight FLOAT,
+  Phone_No VARCHAR(30),
+  Address VARCHAR(30),
+  profile_pic LONGBLOB
+);
+
+INSERT INTO admin (admin_ID, username, password, email, name) VALUES
+(1, 'admin1', 'pass1', 'admin1@example.com', 'Admin 1'),
+(2, 'admin2', 'pass2', 'admin2@example.com', 'Admin 2'),
+(3, 'admin3', 'pass3', 'admin3@example.com', 'Admin 3'),
+(4, 'admin4', 'pass4', 'admin4@example.com', 'Admin 4'),
+(5, 'admin5', 'pass5', 'admin5@example.com', 'Admin 5');
+
+INSERT INTO appointments (App_Id, Patient_Id, Doctor_ID, app_date, app_time, status) VALUES
+(1, 1, 1, '2023-06-22', '10:00:00', 'Confirmed'),
+(2, 2, 2, '2023-06-23', '14:30:00', 'Pending'),
+(3, 3, 3, '2023-06-24', '11:15:00', 'Confirmed'),
+(4, 4, 4, '2023-06-25', '09:45:00', 'Canceled'),
+(5, 5, 5, '2023-06-26', '16:00:00', 'Confirmed');
+
+INSERT INTO department (Dept_Id, Dept_Name) VALUES
+(1, 'Department 1'),
+(2, 'Department 2'),
+(3, 'Department 3'),
+(4, 'Department 4'),
+(5, 'Department 5');
+
+INSERT INTO patient (Patient_Id, Name, Age, Gender, Blood_Grp, Height, Weight, Phone_No, Address, profile_pic) VALUES
+(1, 'Patient 1', 30, 'Male', 'A+', 175.5, 70.2, '1234567890', 'Address 1', NULL),
+(2, 'Patient 2', 45, 'Female', 'B-', 160.0, 65.7, '2345678901', 'Address 2', NULL),
+(3, 'Patient 3', 52, 'Male', 'O+', 180.2, 80.0, '3456789012', 'Address 3', NULL),
+(4, 'Patient 4', 28, 'Female', 'AB+', 165.8, 55.5, '4567890123', 'Address 4', NULL),
+(5, 'Patient 5', 38, 'Male', 'A-', 170.0, 75.1, '5678901234', 'Address 5', NULL);
+
+ALTER TABLE doctor ADD COLUMN Age INT;
+ALTER TABLE doctor ADD COLUMN Gender VARCHAR(10);
+ALTER TABLE doctor ADD COLUMN Dept_Name VARCHAR(50);
+ALTER TABLE doctor ADD COLUMN Experience INT;
+
+INSERT INTO doctor (Doctor_ID, Doctor_Name, Contact_No, Email, Dept_Id, password, Age, Gender, Dept_Name, Experience)
+VALUES (1, 'Doctor 1', '123456789', 'doctor1@example.com', 1, 'password1', 35, 'Male', 'Department 1', 10);
+
+INSERT INTO doctor (Doctor_ID, Doctor_Name, Contact_No, Email, Dept_Id, password, Age, Gender, Dept_Name, Experience)
+VALUES (2, 'Doctor 2', '987654321', 'doctor2@example.com', 2, 'password2', 40, 'Female', 'Department 2', 15);
+
+INSERT INTO doctor (Doctor_ID, Doctor_Name, Contact_No, Email, Dept_Id, password, Age, Gender, Dept_Name, Experience)
+VALUES (3, 'Doctor 3', '111222333', 'doctor3@example.com', 1, 'password3', 45, 'Male', 'Department 1', 20);
+
+INSERT INTO doctor (Doctor_ID, Doctor_Name, Contact_No, Email, Dept_Id, password, Age, Gender, Dept_Name, Experience)
+VALUES (4, 'Doctor 4', '444555666', 'doctor4@example.com', 3, 'password4', 38, 'Female', 'Department 3', 12);
+
+INSERT INTO doctor (Doctor_ID, Doctor_Name, Contact_No, Email, Dept_Id, password, Age, Gender, Dept_Name, Experience)
+VALUES (5, 'Doctor 5', '777888999', 'doctor5@example.com', 2, 'password5', 42, 'Male', 'Department 2', 18);
+
+CREATE TABLE PatientDiagnosis (
+  Diagnosis_ID INT PRIMARY KEY AUTO_INCREMENT,
+  Patient_ID INT NOT NULL,
+  Diagnosis_Date DATE NOT NULL,
+  Diagnosis_Details VARCHAR(255) NOT NULL,
+  Doctor_ID INT NOT NULL,
+  FOREIGN KEY (Patient_ID) REFERENCES Patient(Patient_Id),
+  FOREIGN KEY (Doctor_ID) REFERENCES doctor(Doctor_ID)
+);
+
+INSERT INTO PatientDiagnosis (Patient_ID, Diagnosis_Date, Diagnosis_Details, Doctor_ID) VALUES
+(1, '2023-06-22', 'Diagnosis details 1', 1),
+(2, '2023-06-23', 'Diagnosis details 2', 2),
+(3, '2023-06-24', 'Diagnosis details 3', 3),
+(4, '2023-06-25', 'Diagnosis details 4', 4),
+(5, '2023-06-26', 'Diagnosis details 5', 5);
+
+ALTER TABLE PatientDiagnosis
+DROP COLUMN Diagnosis_ID;
+
+ALTER TABLE patient
+ADD COLUMN Password VARCHAR(30) AFTER Address;
+
+UPDATE patient SET Password = 'password1' WHERE Patient_Id = 1;
+UPDATE patient SET Password = 'password2' WHERE Patient_Id = 2;
+UPDATE patient SET Password = 'password3' WHERE Patient_Id = 3;
+UPDATE patient SET Password = 'password4' WHERE Patient_Id = 4;
+UPDATE patient SET Password = 'password5' WHERE Patient_Id = 5;

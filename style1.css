@@ -1,0 +1,69 @@
+html{
+    background: #001C30 ;
+}
+
+h1{
+    position: absolute;
+    width: 1079px;
+    height: 34px;
+    left: 100px;
+    top: -30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 121px;
+    text-align: center;
+    color:aliceblue;
+}
+
+#pass{
+    position: absolute;
+    width: 587px;
+    height: 35px;
+    left: 400px;
+    top: 309px;
+    display: inline-block;
+    text-align: left;
+    
+    
+}
+
+#Name{
+    position: absolute;
+    width: 587px;
+    height: 35px;
+    left: 400px;
+    top: 162px;
+    display: inline-block;
+    text-align: left;
+}
+
+#nm{
+    position: absolute;
+    width: 587px;
+    height: 35px;
+    left: 300px;
+    top: 172px;
+    color: #FFFFFF;
+    display: inline-block;
+  
+}
+
+#pwd{
+    position: absolute;
+    width: 587px;
+    height: 35px;
+    left: 300px;
+    top: 320px;
+    color: #FFFFFF;
+    
+}
+
+#submit{
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    left: 550px;
+    top: 409px;
+}

@@ -1,0 +1,251 @@
+html {
+    background: #180da7;
+}
+
+h1 {
+    position: absolute;
+    width: 1079px;
+    height: 34px;
+    left: 400px;
+    top: -30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 121px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.rectangle {
+    width: 332px;
+    height: 1024px;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.profile-icon {
+    width: 189px;
+    height: 170px;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+} 
+
+.rectangle2 {
+    width: 491px;
+    height: 477px;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 900px;
+    top: 150px;
+}
+
+.rectangle3 {
+    width: 491px;
+    height: 477px;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+h3 {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 50px;
+    top: 300px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.recent {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 425px;
+    top: -150px;  
+    font-family: initial;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: left;
+    color: rgb(10, 11, 11);
+    white-space: nowrap;
+}
+
+.appointment {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 980px;
+    top: -150px;  
+    font-family: initial;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: left;
+    color: rgb(10, 11, 11);
+    white-space: nowrap;
+}
+
+.name {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: -30px;
+    top: 400px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.age {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: -30px;
+    top: 450px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.gender {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: -30px;
+    top: 500px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.contact {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: -10px;
+    top: 300px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.admission {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 400px;
+    top: 250px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.dia {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 380px;
+    top: 300px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.pres {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 390px;
+    top: 350px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.doc {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: 380px;
+    top: 400px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.add {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: -30px;
+    top: 650px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
+
+.ph {
+    position: absolute;
+    width: 213px;
+    height: 60px;
+    left: -30px;
+    top: 700px;
+    font-family: initial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(10, 11, 11);
+}
